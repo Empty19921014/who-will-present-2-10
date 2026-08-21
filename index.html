@@ -33,7 +33,7 @@
   'use strict';
   // ---------- 상태와 날짜 ----------
   const MAX=30, $=s=>document.querySelector(s), now=new Date();
-  const DEFAULT_ROSTER=['강지윤','김시은','박서진','박수빈','변채윤','백린서','손세빈','윤예원','유은서','윤채빈','이다빈','이예인','임주아','정유나','정인지','황준서','권형빈','김영운','김찬형','남윤호','남태윤','박서준','박재영','손승현','이연','이준서','이화준','최현서','황준환','황지후'];
+  const DEFAULT_ROSTER=['강지윤','김시은','박서진','박수빈','박채윤','백민서','손세빈','윤예원','윤은서','윤채빈','이단비','이예인','임주아','정유나','정인지','황준서','권현빈','김영우','김찬형','남윤호','남태욱','박서준','박재영','손승현','이연','이준서','이현준','최현서','황준현','황지후'];
   const date={year:now.getFullYear(),month:now.getMonth()+1,day:now.getDate()};
   const savedRoster=localStorage.getItem('mathPickerRoster');
   const state={excluded:new Set(JSON.parse(localStorage.getItem('mathPickerExcluded')||'[]')), roster:savedRoster===null?[...DEFAULT_ROSTER]:JSON.parse(savedRoster), steps:[],winner:null,running:false,timers:[]};
